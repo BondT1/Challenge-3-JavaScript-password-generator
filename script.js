@@ -5,6 +5,9 @@ const generateBtn = document.querySelector("#generate");
 function writePassword() {
   const password = generatePassword();
   const passwordText = document.querySelector("#password");
+  const passwordCriteria = prompt("Password-Criteria");
+  alert (passwordCriteria);
+
 
   passwordText.value = password;
 
@@ -13,7 +16,11 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+
+
 const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
 const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const numbers = "0123456789";
 const symbols = " !#$%&'()*+,-./:;<=>?@][\^_`{|}~";
+
+
