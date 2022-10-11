@@ -1,10 +1,10 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+const generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  const password = generatePassword();
+  const passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
@@ -12,3 +12,8 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
+const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const numbers = "0123456789";
+const symbols = " !#$%&'()*+,-./:;<=>?@][\^_`{|}~";
