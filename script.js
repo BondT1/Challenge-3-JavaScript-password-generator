@@ -28,15 +28,24 @@ function writePassword() {
 
 function generatePassword() {
   
-  const verifyLength = prompt ("Please specify how many characters you want your password to contain");
+  const verifyLength = prompt ("Please specify how many characters you want your password to contain. (8 - 128 characters)");
   alert (verifyLength);
-  return password;
+
+  if(verifyLength <= 7 || verifyLength >= 127 ) {
+    alert("Password length must be between 8 and 128 characters");
+  } else if (isNaN(verifyLength)) {
+    verifyLength = prompt("Enter a valid number.");
+  } else {
+    alert("Your password will be " + verifyLength + " characters long.");
+  }
 
   
-  if(verifyLength > 128 && verifyLength < 8 ) {
-    alert("Password length must be between 8 and 128 characters");
+
   }
-}
+    
+  
+
+
  
 
 
