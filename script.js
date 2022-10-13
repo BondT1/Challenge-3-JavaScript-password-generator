@@ -39,6 +39,13 @@ function generatePassword() {
     alert("Your password will be " + verifyLength + " characters long.");
   }
 
+  verifyUppercase = confirm ("Do you want lowercase characters in your password?");
+  if (verifyUppercase) {
+    alert ("Your password WILL contain lowercase characters");
+  } else {
+    alert ("Your password WILL NOT contain lowercase characters");
+  }
+
   
 
   }
