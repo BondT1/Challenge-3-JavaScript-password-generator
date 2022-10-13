@@ -23,7 +23,6 @@ function generatePassword() {
  
   // Prompt for the number of characters in the password 
   var verifyLength = prompt ("Please specify how many characters you want your password to contain. (8 - 128 characters)");
-  alert (verifyLength);
 
   // Loops back round to the above prompt if the criteria is not met
   while(verifyLength <= 7 || verifyLength >= 129 ) {
