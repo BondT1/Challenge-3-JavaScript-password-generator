@@ -7,7 +7,7 @@ generateBtn.addEventListener("click", writePassword);
 const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
 const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const numbers = "0123456789";
-const symbols = " !#$%&'()*+,-./:;<=>?@][\^_`{|}~";
+const specialCharacters = " !#$%&'()*+,-./:;<=>?@][\^_`{|}~";
 
 var verifyLength = "";
 
@@ -39,14 +39,28 @@ function generatePassword() {
     alert("Your password will be " + verifyLength + " characters long.");
   }
 
-  verifyUppercase = confirm ("Do you want lowercase characters in your password?");
+  verifyUppercase = confirm ("Do you want uppercase characters in your password?");
   if (verifyUppercase) {
+    alert ("Your password WILL contain uppercase characters");
+  } else {
+    alert ("Your password WILL NOT contain uppercase characters");
+  }
+
+  verifyLowercase = confirm ("Do you want lowercase characters in your password?");
+  if (verifyLowercase) {
     alert ("Your password WILL contain lowercase characters");
   } else {
     alert ("Your password WILL NOT contain lowercase characters");
   }
 
-  
+  verifyNumbers = confirm ("Do you want numbers in your password?");
+  if (verifyNumbers) {
+    alert ("Your password WILL contain numbers");
+  } else {
+    alert ("Your password WILL NOT contain numbers");
+  }
+
+  verifySymbols = confirm ("Do you want ")
 
   }
     
