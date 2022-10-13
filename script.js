@@ -10,10 +10,7 @@ const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
 const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const numbers = "0123456789";
 const specialCharacters = " !#$%&'()*+,-./:;<=>?@][\^_`{|}~";
-
-var verifyLength = "";
-
-
+const finalPassword = ""
 
 // Write password to the #password input
 function writePassword() {
@@ -79,9 +76,21 @@ function generatePassword() {
     var verifySpecial = confirm ("Do you want special characters in your password?");
   }
 
-  // Might not use the alerts for the above 4 variables due to it being very long winded when creating the above loop
+  // Might not use the alerts for the above 4 variables due to it having to be very long winded when creating the above loop
 
-  
+  if (verifyUppercase) {
+    finalPassword = finalPassword.concat(uppercaseLetters);
+  }
+  if (verifyLowercase) {
+    finalPassword = finalPassword.concat(lowercaseLetters);
+  }
+  if (verifyNumbers) {
+    finalPassword = finalPassword.concat(numbers);
+  }
+  if (verifySpecial) {
+    finalPassword = finalPassword.concat(specialCharacters);
+  }
+
 
   }
     
